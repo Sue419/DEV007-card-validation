@@ -2,7 +2,6 @@ import validator from './validator.js';
 
 const validar = document.getElementById("validar"); //el boton para validar
 validar.addEventListener("click", callValidar); // evento que al hacer click en el boton validar va a llamar a las indicaciones que hay en la función
-/*validar.addEventListener("click", mascaraNumeral);*/
 
 function callValidar() { //función para mostrar validar
   const cardNumber = document.getElementById("cardNumber").value; //input id de la tarjeta
