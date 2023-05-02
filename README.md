@@ -35,13 +35,14 @@ La temática del proyecto es sobre el registro de un usuario en una aplicación 
 datos de la tarjeta de crédito y nombre. 
 
 ### Diseño de producto
+El diseño de la aplicación es bastante sencillo.
+Esta imagen fue una de las primeras del prototipo.
+![Gráfica de baja fidelidad](src/assets/prototipo.JPG)
 
-- [ ] **Crear prototipos de alta fidelidad que incluyan interacciones**
+Sigue la estructura de encabezado, cuerpo (donde va la imagen de la tarjeta y las secciones de 'nombre' y 'número de tarjeta').
+En este caso, la app del banco Boraban tiene como inicio el registro del número de tarjeta y el nombre del usuario.
 
-- [ ] **Seguir los principios básicos de diseño visual**
-![gráfica de baja fidelidad]()
-
-![gráfica de alta fidelidad]()
+![Gráfica de alta fidelidad](src/assets/prototipo%20alta.JPG)
 
 ## 3. Los objetivos generales de este proyecto son los siguientes
 
