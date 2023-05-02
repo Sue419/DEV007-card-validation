@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Teko:wght@300&display=swap');
+* { /*configuración inicial de base para la web*/
+    box-sizing: border-box; /*respecto al contenido el contender puede ir creciendo*/
+    margin: 0;
+    padding: 0;
+}
+
+/*---para quitar las flechas del input type number----*/
+/*input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}*/
+
+/* cuerpo de la web */
+body{
+  font-family:roboto;
+  background-color: #986ae2;
+}
+/*-----Encabezado----*/
+#nombre-web {
+    text-align: center;
+    font-size: 55px;
+
+    color:#F5EFFF;
+    height: 100px;
+    text-shadow: 15px 2px 20px #4D336F;
+  }
+
+/*-----Espacio donde va la tarjeta y formulario----*/
+.container {
+  background-color: #ffffff;
+  width: 30%;
+  margin: auto;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+}
+
+/*-----estilos de tarjeta----*/
+.tarjeta {
+  width: 100%;
+  max-width: 450px;
+  position: relative;
+  color:#ffffff;
+  /*transition: .3 ease all;
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  cursor: pointer;
+  z-index: 2; */
+
+}
+.tarjeta > div {
+	padding: 20px;
+	border-radius: 15px;
+	min-height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0 10px 10px 0 rgba(90, 33, 119, 0.3);
+}
+.tarjeta .frontCard {
+	width: 100%;
+	background: url(../img/violet-background.jpg);
+	background-size: cover;
+}
+.frontCard .logovisa {
+  text-align: right;
+	min-height: 50px;
+  /*background-color: #f1691a;*/
+}
+/*----LOGO---*/
+.frontCard .logovisa img {
+	width: 100%;
+	height: 80%;
+	object-fit: cover; /*El contenido se dimensiona manteniendo su relación de aspecto mientras llena todo el cuadro de contenido del elemento*/
+	max-width: 75px;
+}
+/*----CHIP----*/
+.frontCard .chip {
+  text-align: right;
+	min-height: 30px;
+  margin-bottom: 80px;
+}
+.frontCard .chip img {
+	width: 100%;
+	height: 100%;
+	max-width: 55px;
+}
+/*----DATOS EN IMAGEN TARJETA----*/
+.frontCard .grupo .numero {
+	color: #dcdcdc;
+  justify-content: space-between;
+	font-size: 30px;
+  font-family: 'Teko';
+  letter-spacing: 12px;
+  margin-top: -20px;
+}
+.frontCard.grupo .nombre {
+	color: #dcdcdc;
+	font-size: 20px;
+}
+.frontCard .flexbox {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+  text-transform: uppercase;
+  font-family: 'Teko';
+  letter-spacing: 5px;
+}
+
+/* ---------- Tarjeta Trasera ----------*/
+.cardBack {
+  width: 100%;
+	background: url(../img/violet-background.jpg);
+	background-size: cover;
+	position: absolute;
+	top: 0;
+  
+}
+
+/*-----INPUT DE INGRESO NUMERO DE TARJETA  Y NOMBRE----*/
+
+.formulario {
+	width: 100%;
+  max-width: 450px;
+  margin: auto;
+  padding: 2%;
+  position: relative;
+  justify-content: space-between;
+  font-family: 'Roboto';
+  }
+
+.formValidarTarjeta input{
+  width: 100%;
+  height: 20px;
+  padding: 20px;
+  
+  border: 1px solid #cdcdcd;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+  align-items: start;
+  font-size: large;
+}
+
+.formValidarTarjeta input:hover{
+   border: 1px solid #8d648d;
+}
+
+.formValidarTarjeta label {
+  width: 100%;
+  margin: auto;
+
+  position: relative;
+  max-width: 450px;
+  background-color: rgb(255, 255, 255);
+  font-size: 19px;
+  color: #4D336F;
+  font-family: 'Roboto';
+}
+
+
+
+#message2 {
+ color: gray;
+ background: white;
+ text-align: center;
+ font-size: 16px;
+}
+
+#message {
+  color: gray;
+  background: white;
+  text-align: center;
+  font-size: 16px;
+ }
+
+/* -- BOTON VALIDAR--*/
+#validar {
+  width: 100%;
+  background-color: #4D336F;
+  color:#ffffff;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  font-size: 15px;
+  font-family: 'Roboto';
+  min-width: 200px;
+}
+
+#validar:hover {
+  color:#f1691a;
+  box-shadow: 0 5px 5px 0 rgba(90, 33, 119, 0.2);
+}
