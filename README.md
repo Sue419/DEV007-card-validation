@@ -17,7 +17,7 @@
 ## 1. Preámbulo
 
 El [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn),
-también llamado algoritmo de módulo 10, es un método de suma de verificación,
+también llamado algoritmo de módulo 10, es un método de suma de verificación que
 se utiliza para validar números de identificación; tales como el IMEI de los
 celulares, tarjetas de crédito, etc.
 
@@ -31,21 +31,17 @@ la suma de sus dígitos finales es un múltiplo de 10.
 
 ## 2. Resumen del proyecto
 
-En este proyecto tendrás que construir una aplicación web que le permita a un
-usuario validar el número de una tarjeta de crédito. Además, tendrás que
-implementar funcionalidad para ocultar todos los dígitos de una tarjeta menos
+En este proyecto consistió en construir una aplicación web que permita a un
+usuario validar el número de una tarjeta de crédito. 
+
+Además, tendrás que implementar funcionalidad para ocultar todos los dígitos de una tarjeta menos
 los últimos cuatro.
 
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se
+La temática es e Tú debes pensar en qué situaciones de la vida real se
 necesitaría validar una tarjeta de crédito y pensar en cómo debe ser esa
 experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?)
 etc.
 
-Como continuación del proyecto de preadmisión, volverás a trabajar sobre
-fundamentos de JavaScript, incluyendo conceptos como variables, condicionales,
-y funciones, así como eventos y manipulación básica del DOM, fundamentos de
-HTML y CSS. Mientras desarrollas este proyecto, te familiarizarás con nuevos
-conceptos también.
 
 ### Los objetivos generales de este proyecto son los siguientes
 

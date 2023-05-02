@@ -6,9 +6,85 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+
+    <!---- ENCABEZADO---->
+    <header>
+      <section id="nombre-web"> 
+        <h1>Boraban</h1>
+      </section>
+      <p id="slogan"></p>
+    </header>
+
+    <br><br>
+
+  <!-- TARJETA FRONTAL (imagen)-->
+  <!-- <div class="contenedorImageCard"> 
+    <div class="cardFrontal">
+      <figure >
+        <img  src="./assets/credicardFRONT.png" alt="Tarjeta front">
+      </figure>
+
+      <div class="cardBack">
+        <figure >
+          <img  src="./assets/credicardBACK.png" alt="Tarjeta back">
+        </figure>
+      </div> 
+      
+    </div> -->
+ <!---- TARJETA---->
+    <main>
+      <div class="container">
+        <!------DISEÑO/DIBUJO TARJETA---->
+        <section class="tarjeta" id="tarjeta">
+          <!------TARJETA ADELANTE---->
+          <div class="frontCard">
+            <div class="logovisa" id="logovisa">
+              <img src="./img/visa-logo.png" alt ="visa logo">
+            </div>
+            <div class="chip" id="chip">
+              <img src="./img/chip.png" alt="chip tarjeta">
+            </div>
+
+            <div class="datos">
+              <div class="grupo" id="numero">
+                <p class="label"></p>
+                <p class="numero">4000 1234 5678 9010</p>
+              </div>
+              <div class="flexbox">
+                <div class="grupo" id="nombre">
+                  <p class="label"></p>
+                  <p class="nombre">SUSAN OJEDA</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section> 
+        <br><br>
+        <!---- FORMULARIO TARJETA---->
+        <section class="formulario" id="formulario">
+          <div class="formValidarTarjeta">
+            <div id="cuadro">
+              <label> <strong>Nombre y Apellido: </strong> </label><br><br>
+              <input type="text" id="nombre" placeholder="Escribe tu nombre y apellido" required> <br><br>
+              <p id="message2"> </p> <br>
+              <label> <strong> Nº de tarjeta: </strong> </label> <br><br>
+              <input type="text" id="cardNumber"  placeholder="0000-0000-0000-0000" maxlength="16" size="30" required> <br><br>
+              <p id="message"> </p>
+            </div>        
+          </div>
+        </section>
+        <br>
+        
+        <div>
+          <button id="validar" type= "button"> Validar</button> <br>
+        </div>
+          
+      </div>
+      
+    </main>
+
+    <footer> Susan Ojeda </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
