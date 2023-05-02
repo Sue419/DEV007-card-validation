@@ -79,7 +79,7 @@ body{
 .frontCard .logovisa img {
 	width: 100%;
 	height: 80%;
-	object-fit: cover; /*El contenido se dimensiona manteniendo su relación de aspecto mientras llena todo el cuadro de contenido del elemento*/
+	object-fit: contain; /*El contenido se dimensiona manteniendo su relación de aspecto mientras llena todo el cuadro de contenido del elemento*/
 	max-width: 75px;
 }
 /*----CHIP----*/
