@@ -32,18 +32,28 @@ la suma de sus dígitos finales es un múltiplo de 10.
 ## 2. Resumen del proyecto
 
 En este proyecto consistió en construir una aplicación web que permita a un
-usuario validar el número de una tarjeta de crédito. 
+usuario validar el número de una tarjeta de crédito y, también, implementar una funcionalidad para ocultar todos los dígitos de una tarjeta menos
+los últimos cuatro dígitos.
 
-Además, tendrás que implementar funcionalidad para ocultar todos los dígitos de una tarjeta menos
-los últimos cuatro.
+La temática del proyecto es sobre el registro de un usuario en una aplicación de banco (Boraban), el cual requiere ingresar los
+datos de la tarjeta de crédito y nombre. 
 
-La temática es e Tú debes pensar en qué situaciones de la vida real se
-necesitaría validar una tarjeta de crédito y pensar en cómo debe ser esa
-experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?)
-etc.
+### Centrado en el usuario
+
+- [ ] **Diseñar y desarrollar un producto o servicio poniendo a las usuarias en el centro**
+
+![gráfica de baja fidelidad]()
 
 
-### Los objetivos generales de este proyecto son los siguientes
+### Diseño de producto
+
+- [ ] **Crear prototipos de alta fidelidad que incluyan interacciones**
+
+- [ ] **Seguir los principios básicos de diseño visual**
+
+![gráfica de alta fidelidad]()
+
+## 3. Los objetivos generales de este proyecto son los siguientes
 
 * Trabajar en base a un boilerplate, la estructura básica de un proyecto en
   distintas carpetas (a través modulos en JS).
@@ -53,19 +63,8 @@ etc.
   en JavaScript
 * Implementar control de versiones con git (y la plataforma github)
 
-## 3. Consideraciones generales
 
-* Este proyecto lo resolvemos de manera **individual**.
-* El rango de tiempo estimado para completar el proyecto es de 1 a 3 Sprints.
-* Enfócate en aprender y no solamente en "completar" el proyecto.
-* Te sugerimos que no intentes saberlo todo antes de empezar a codear.
-  No te preocupes demasiado ahora por lo que _todavía_ no entiendas.
-  Irás aprendiendo.
-
-## 4. Hito: Criterios de aceptación mínimos del proyecto
-
-Estos son los requisitos que tu proyecto debe que cumplir para asegurar que tu
-trabajo cubra los objetivos principales.
+## 4. Los objetivos principales son:
 
 **1. Una interfaz que debe permitir a la usuaria:**
 
@@ -97,35 +96,7 @@ Estas preguntas sirven como guía:
 Con estos requisitos cumplidos puedes
 [considerar agendar un Project Feedback con unx coach.](#9-para-considerar-project-feedback)
 
-## 5. Hito Opcional: Mostrar la franquicia de tarjeta
 
-Las partes opcionales tienen como intención permitirte profundizar un poco más
-sobre los objetivos de aprendizaje del proyecto. Todo en la vida tiene pros y
-contras, decide sabiamente si quieres invertir el tiempo en profundizar/
-perfeccionar o aprender cosas nuevas en el siguiente proyecto.
-
-En hito 2 puedes además de validar si el número de la
-tarjeta es válida, mostrar la [franquicia](https://es.wikipedia.org/wiki/N%C3%BAmero_de_tarjeta_bancaria)
-de la tarjeta (ej: Visa, MasterCard, etc)
-usando estas [reglas de validación](https://stevemorse.org/ssn/cc.html).
-Si escribes un nuevo método para eso, hay que hacer pruebas unitarias.
-
-## 6. Consideraciones técnicas
-
-La lógica del proyecto debe estar implementada completamente en JavaScript. En
-este proyecto NO está permitido usar librerías o frameworks, solo JavaScript
-puro también conocido como Vanilla JavaScript.
-
-Para comenzar este proyecto tendrás que hacer un _fork_ y _clonar_ este
-repositorio que contiene un _boilerplate_ con tests (pruebas). Un _boilerplate_
-es la estructura basica de un proyecto que sirve como un punto de partida con
-archivos inicial y configuración basica de dependencias y tests.
-
-Los tests unitarios deben cubrir un mínimo del 70% de _statements_, _functions_
-y _lines_, y un mínimo del 50% de _branches_. El _boilerplate_ ya contiene el
-setup y configuración necesaria para ejecutar los tests (pruebas) así como _code
-coverage_ para ver el nivel de cobertura de los tests usando el comando `npm
-test`.
 
 El boilerplate que les damos contiene esta estructura:
 
@@ -360,15 +331,6 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Sitio oficial de GitHub Pages](https://pages.github.com/)
 </p></details>
 
-### Centrado en el usuario
-
-- [ ] **Diseñar y desarrollar un producto o servicio poniendo a las usuarias en el centro**
-
-### Diseño de producto
-
-- [ ] **Crear prototipos de alta fidelidad que incluyan interacciones**
-
-- [ ] **Seguir los principios básicos de diseño visual**
 
 ## 8. Pistas, tips y lecturas complementarias
 
