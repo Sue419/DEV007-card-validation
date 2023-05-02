@@ -62,8 +62,8 @@ body{
 	min-height: 250px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	box-shadow: 0 10px 10px 0 rgba(90, 33, 119, 0.3);
+
+	box-shadow: 0 10px 10px rgba(90, 33, 119, 0.3);
 }
 .tarjeta .frontCard {
 	width: 100%;
@@ -79,7 +79,7 @@ body{
 .frontCard .logovisa img {
 	width: 100%;
 	height: 80%;
-	object-fit: contain; /*El contenido se dimensiona manteniendo su relación de aspecto mientras llena todo el cuadro de contenido del elemento*/
+	object-fit: cover; /*El contenido se dimensiona manteniendo su relación de aspecto mientras llena todo el cuadro de contenido del elemento*/
 	max-width: 75px;
 }
 /*----CHIP----*/
@@ -102,7 +102,7 @@ body{
   letter-spacing: 5px;
   margin-top: -20px;
 }
-.frontCard.grupo .nombre {
+.frontCard.grupo .name {
 	color: #dcdcdc;
 	font-size: 10px;
 }
@@ -116,14 +116,13 @@ body{
 }
 
 /* ---------- Tarjeta Trasera ----------*/
-.cardBack {
+/*.cardBack {
   width: 100%;
 	background: url(../img/violet-background.jpg);
 	background-size: cover;
 	position: absolute;
 	top: 0;
-  
-}
+}*/
 
 /*-----INPUT DE INGRESO NUMERO DE TARJETA  Y NOMBRE----*/
 
