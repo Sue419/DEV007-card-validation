@@ -34,18 +34,12 @@ los últimos cuatro dígitos.
 La temática del proyecto es sobre el registro de un usuario en una aplicación de banco (Boraban), el cual requiere ingresar los
 datos de la tarjeta de crédito y nombre. 
 
-### Centrado en el usuario
-
-- [ ] **Diseñar y desarrollar un producto o servicio poniendo a las usuarias en el centro**
-
-![gráfica de baja fidelidad]()
-
-
 ### Diseño de producto
 
 - [ ] **Crear prototipos de alta fidelidad que incluyan interacciones**
 
 - [ ] **Seguir los principios básicos de diseño visual**
+![gráfica de baja fidelidad]()
 
 ![gráfica de alta fidelidad]()
 
