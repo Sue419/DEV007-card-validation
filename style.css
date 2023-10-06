@@ -132,7 +132,6 @@ body{
   background-color: white;
   text-align: center;
   align-items: start;
-  font-size: large;
 }
 
 .formValidarTarjeta input:hover{
@@ -146,6 +145,7 @@ body{
   max-width: 450px;
   background-color: rgb(255, 255, 255);
   font-size: 19px;
+  font-weight: 600;
   color: #4D336F;
 
 }

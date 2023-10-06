@@ -6,12 +6,13 @@ validar.addEventListener("click", callValidar); // evento que al hacer click en 
 function callValidar() { //función para mostrar validar
 
   const nombre = document.getElementById("nombre").value;
+  const cardNumber = document.getElementById("cardNumber").value; //input id de la tarjeta
+  
   if ((nombre === "" || cardNumber === "")){
     document.getElementById("message").innerHTML = "Por favor, ingrese sus datos";
     return;
   } 
 
-  const cardNumber = document.getElementById("cardNumber").value; //input id de la tarjeta
   if (validator.isValid(cardNumber) === true) {  //condición aplicada para el mensaje de si es válida o no la tarjeta
     document.getElementById("message").innerHTML = "Tarjeta válida";
   } else {
