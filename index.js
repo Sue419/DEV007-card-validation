@@ -2,33 +2,42 @@ import validator from './validator.js';
 
 const validar = document.getElementById("validar"); //el boton para validar
 validar.addEventListener("click", callValidar); // evento que al hacer click en el boton validar va a llamar a las indicaciones que hay en la función
-/*validar.addEventListener("click", mascaraNumeral);*/
 
 function callValidar() { //función para mostrar validar
+
+  const nombre = document.getElementById("nombre").value;
+  if ((nombre === "" || cardNumber === "")){
+    document.getElementById("message").innerHTML = "Por favor, ingrese sus datos";
+    return;
+  } 
+
   const cardNumber = document.getElementById("cardNumber").value; //input id de la tarjeta
   if (validator.isValid(cardNumber) === true) {  //condición aplicada para el mensaje de si es válida o no la tarjeta
     document.getElementById("message").innerHTML = "Tarjeta válida";
   } else {
     document.getElementById("message").innerHTML = "Tarjeta no válida";
   }
-  document.getElementById("cardNumber").value = validator.maskify(cardNumber);
 
-  const nombre = document.getElementById("nombre").value;
-  if ((nombre === "" || cardNumber === "")){
-    alert ('Por favor, ingrese sus datos');
-    //document.getElementById("message").innerHTML = "No ha ingresado su número de tarjeta";
-    //document.getElementById("message2").innerHTML = "No ha ingresado su nombre";
-  } 
+  document.getElementById("cardNumber").value = validator.maskify(cardNumber);
 
 }
 
-//enmascarar maskify
-/*function mascaraNumeral () {
-    const enmascarar = document.getElementById("cardNumber").value;
-    const enmascarado = validator.maskify(enmascarar);
-    if (enmascarado) {
-     enmascarar = enmascarado;
-    }
-}*/
+// Agregar un event listener al campo de nombre
+const nombreInput = document.getElementById("nombre");
+nombreInput.addEventListener("input", () => {
+  const nombre = nombreInput.value;
+  // Actualizar el nombre en la tarjeta
+  document.getElementById("nombreTarjeta").textContent = nombre;
+});
 
-//console.log(validator);
+// Agregar un event listener al campo de número de tarjeta
+const cardNumberInput = document.getElementById("cardNumber");
+cardNumberInput.addEventListener("input", () => {
+  let cardNumber = cardNumberInput.value;
+  // Eliminar cualquier espacio en blanco existente en el número de tarjeta
+  cardNumber = cardNumber.replace(/\s/g, '');
+  // Formatear el número de tarjeta con espacios cada cuatro dígitos
+  cardNumber = cardNumber.replace(/(\d{4})(?=\d)/g, '$1 ');
+  // Actualizar el número en la tarjeta
+  document.getElementById("numeroTarjeta").textContent = cardNumber;
+});

@@ -17,20 +17,6 @@
 
     <br><br>
 
-  <!-- TARJETA FRONTAL (imagen)-->
-  <!-- <div class="contenedorImageCard"> 
-    <div class="cardFrontal">
-      <figure >
-        <img  src="./assets/credicardFRONT.png" alt="Tarjeta front">
-      </figure>
-
-      <div class="cardBack">
-        <figure >
-          <img  src="./assets/credicardBACK.png" alt="Tarjeta back">
-        </figure>
-      </div> 
-      
-    </div> -->
  <!---- TARJETA---->
     <main>
       <div class="container">
@@ -48,12 +34,12 @@
             <div class="datos">
               <div class="grupo" id="numero">
                 <p class="label"></p>
-                <p class="numero">4000 1234 5678 9010</p>
+                <p class="numero" id="numeroTarjeta"></p>
               </div>
               <div class="flexbox">
-                <div class="grupo" id="nombre">
+                <div class="grupo" id="name">
                   <p class="label"></p>
-                  <p class="nombre">SUSAN OJEDA</p>
+                  <p class="name" id="nombreTarjeta"></p>
                 </div>
               </div>
             </div>
@@ -67,7 +53,6 @@
             <div id="cuadro">
               <label> Nombre y Apellido:</label><br><br>
               <input type="text" id="nombre" placeholder="Escribe tu nombre y apellido" required> <br><br>
-              <p id="message2"> </p> <br>
               <label> Nº de tarjeta: </label> <br><br>
               <input type="text" id="cardNumber"  placeholder="0000-0000-0000-0000" maxlength="16" size="30" required> <br><br>
               <p id="message"> </p>
